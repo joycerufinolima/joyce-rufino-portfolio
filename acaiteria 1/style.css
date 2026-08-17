@@ -1,0 +1,758 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    color: #202020;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 20px 7%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    background-color: #fff;
+
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #5b2383;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu a {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #6f2da8;
+}
+
+.button-header {
+    padding: 12px 22px;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: #6f2da8;
+    color: #fff;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.button-header:hover {
+    background-color: #531e80;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    padding: 150px 7% 80px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(35, 8, 53, 0.92),
+            rgba(35, 8, 53, 0.45)
+        ),
+        url("img/hero-acai.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-conteudo {
+    max-width: 650px;
+    color: #fff;
+}
+
+.hero-conteudo h2 {
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    color: #e7c8ff;
+}
+
+.hero-conteudo h1 {
+    margin-bottom: 25px;
+
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 1;
+}
+
+.hero-texto1 {
+    color: #d8a7ff;
+}
+
+.hero-texto2 {
+    color: #fff;
+}
+
+.hero-conteudo p {
+    max-width: 550px;
+
+    margin-bottom: 35px;
+
+    font-size: 1.15rem;
+    line-height: 1.7;
+
+    color: #eee;
+}
+
+.hero-botoes {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-botoes a {
+    padding: 15px 28px;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.hero-botoes a:first-child {
+    background-color: #fff;
+    color: #5b2383;
+}
+
+.hero-botoes a:first-child:hover {
+    transform: translateY(-3px);
+}
+
+.hero-botoes a:last-child {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.hero-botoes a:last-child:hover {
+    background-color: #fff;
+    color: #5b2383;
+}
+
+
+/* =========================
+   TÍTULOS
+========================= */
+
+.titulo-secao {
+    max-width: 700px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.titulo-secao span {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #6f2da8;
+
+    font-size: 0.9rem;
+    font-weight: 800;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.titulo-secao h2 {
+    margin-bottom: 15px;
+
+    font-size: clamp(2rem, 4vw, 3.2rem);
+
+    color: #24152c;
+}
+
+.titulo-secao p {
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   SOBRE
+========================= */
+
+.sobre {
+    padding: 100px 7%;
+}
+
+.container-sobre {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card-sobre {
+    padding: 35px 30px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    background-color: #faf7fc;
+
+    transition: 0.3s;
+}
+
+.card-sobre:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(64, 22, 83, 0.1);
+}
+
+.circulo {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #ead9f5;
+}
+
+.circulo img {
+    width: 50%;
+}
+
+.card-sobre h3 {
+    margin-bottom: 12px;
+
+    color: #2d1936;
+}
+
+.card-sobre p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CARDÁPIO
+========================= */
+
+.cardapio {
+    padding: 100px 7%;
+
+    background-color: #f8f5fa;
+}
+
+.container-cardapio {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card-cardapio {
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background-color: #fff;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.imagem-cardapio {
+    height: 260px;
+
+    overflow: hidden;
+}
+
+.imagem-cardapio img {
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.card-cardapio:hover .imagem-cardapio img {
+    transform: scale(1.08);
+}
+
+.conteudo-cardapio {
+    padding: 25px;
+}
+
+.conteudo-cardapio span {
+    font-size: 0.8rem;
+    font-weight: 800;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: #6f2da8;
+}
+
+.conteudo-cardapio h3 {
+    margin: 8px 0 10px;
+
+    font-size: 1.4rem;
+
+    color: #28152f;
+}
+
+.conteudo-cardapio p {
+    margin-bottom: 20px;
+
+    color: #666;
+    line-height: 1.6;
+}
+
+.conteudo-cardapio a {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    border-radius: 25px;
+
+    background-color: #6f2da8;
+    color: #fff;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+
+/* =========================
+   COMO FUNCIONA
+========================= */
+
+.comofunciona {
+    padding: 100px 7%;
+}
+
+.container-comofunciona {
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
+}
+
+.card-comofunciona {
+    padding: 20px;
+}
+
+.card-comofunciona span {
+    display: block;
+
+    margin-bottom: 20px;
+
+    font-size: 3rem;
+    font-weight: 900;
+
+    color: #e4d3ec;
+}
+
+.card-comofunciona h3 {
+    margin-bottom: 12px;
+
+    font-size: 1.3rem;
+
+    color: #2d1936;
+}
+
+.card-comofunciona p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CTA / VONTADE
+========================= */
+
+.vontade {
+    padding: 100px 7%;
+
+    background:
+        linear-gradient(
+            rgba(74, 26, 97, 0.92),
+            rgba(74, 26, 97, 0.92)
+        ),
+        url("img/acai-fundo.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: #fff;
+
+    text-align: center;
+}
+
+.container-vontade {
+    max-width: 700px;
+
+    margin: auto;
+}
+
+.container-vontade > span {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: #e4c4f5;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    font-weight: 700;
+}
+
+.container-vontade h2 {
+    margin-bottom: 20px;
+
+    font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.container-vontade p {
+    margin-bottom: 30px;
+
+    color: #eee;
+
+    line-height: 1.7;
+}
+
+.botao-pedido {
+    display: inline-block;
+
+    padding: 15px 28px;
+
+    border-radius: 30px;
+
+    background-color: #fff;
+    color: #5b2383;
+
+    font-weight: 800;
+
+    transition: 0.3s;
+}
+
+.botao-pedido:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   CONTATO
+========================= */
+
+.contato {
+    padding: 100px 7%;
+}
+
+.contato-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+.informacao {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 18px;
+}
+
+.icone {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #ead9f5;
+}
+
+.icone img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.informacao h3 {
+    margin-bottom: 7px;
+
+    color: #2d1936;
+}
+
+.informacao p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.local {
+    min-height: 350px;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background-color: #eee;
+
+    color: #777;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.rodape {
+    padding: 50px 7% 30px;
+
+    background-color: #211326;
+
+    color: #fff;
+
+    text-align: center;
+}
+
+.rodape-logo {
+    margin-bottom: 10px;
+
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.rodape > p {
+    color: #bbb;
+}
+
+.redes {
+    margin: 25px 0;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.redes a {
+    color: #ddd;
+
+    transition: 0.3s;
+}
+
+.redes a:hover {
+    color: #d8a7ff;
+}
+
+.rodape hr {
+    margin-bottom: 25px;
+
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.rodape .copyright {
+    font-size: 0.85rem;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 900px) {
+
+    nav {
+        display: none;
+    }
+
+    .container-sobre,
+    .container-cardapio,
+    .container-comofunciona {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contato-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 18px 5%;
+    }
+
+    .button-header {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        padding: 130px 5% 70px;
+    }
+
+    .sobre,
+    .cardapio,
+    .comofunciona,
+    .vontade,
+    .contato {
+        padding: 70px 5%;
+    }
+
+    .container-sobre,
+    .container-cardapio,
+    .container-comofunciona {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-conteudo h1 {
+        font-size: 3rem;
+    }
+
+    .hero-conteudo p {
+        font-size: 1rem;
+    }
+
+    .hero-botoes {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-botoes a {
+        text-align: center;
+    }
+}
+
+
+
+
+    
+
+
+
+
+
+
+
+
+ 
+
+/*
+
+
+
+*/
+
