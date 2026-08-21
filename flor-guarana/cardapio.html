@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cardápio</title>
+<link rel="stylesheet" href="css/stylecardapio.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="imagens/logo-site.png" class="logo-site">
+            Flor de Guaraná
+        </a>
+
+        <ul class="menu">
+            <li><a href="#">Cardápio</a></li>
+            <li><a href="index.html#funcionamento">Como Funciona</a></li>
+            <li><a href="index.html#beneficios">Benefícios</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+<div class="container">
+  <!-- TAMANHO -->
+  <section class="bloco">
+    <h3>Tamanho do copo</h3>
+    <select id="tamanho">
+      <option value="300ml">300ml</option>
+      <option value="500ml">500ml</option>
+      <option value="700ml">700ml</option>
+    </select>
+  </section>
+  
+  <!-- SABOR -->
+  <section class="bloco">
+    <h3>Sabor</h3>
+    <select id="sabor">
+      <option>Oreo</option>
+      <option>Chocolate</option>
+      <option>Morango</option>
+    </select>
+  </section>
+  
+  <!-- COBERTURA -->
+  <section class="bloco">
+    <h3>Cobertura</h3>
+    <select id="cobertura">
+      <option>Sem</option>
+      <option>Chocolate</option>
+      <option>Caramelo</option>
+    </select>
+  </section>
+  
+  <!-- RECHEIOS -->
+  <section class="bloco">
+    <h3>Recheios</h3>
+    <label><input type="radio" name="recheio" value="nutella"> Nutella</label>
+    <label><input type="radio" name="recheio" value="granola"> Granola</label>
+    <label><input type="radio" name="recheio" value="amendoim"> Amendoim</label>
+  </section>
+  
+  <!-- ACOMPANHAMENTOS -->
+  <section class="bloco">
+    <h3>Acompanhamentos</h3>
+    <label><input type="radio" name="acompanhamento" value="chocoball"> Chocoball</label>
+    <label><input type="radio" name="acompanhamento" value="disquete"> Disquete</label>
+    <label><input type="radio" name="acompanhamento" value="gotas de chocolate"> Gotas de chocolate</label>
+  </section>
+  
+  <!-- NOVA PARTE -->
+  <h3>Extras</h3>
+  
+  <div class="extra">
+      <span>Nutella (+R$ 2,00 cada)</span>
+      <span id="qtd-nutella">0</span>
+      <button type="button" onclick="menosExtra('nutella')">−</button>
+  
+      <button type="button" onclick="maisExtra('nutella')">+</button>
+  </div>
+  
+  <div class="extra">
+      <span>Granola (+R$ 1,00 cada)</span>
+      <span id="qtd-granola">0</span>
+      <button type="button" onclick="menosExtra('granola')">−</button>
+  
+      <button type="button" onclick="maisExtra('granola')">+</button>
+  </div>
+  
+  <div class="extra">
+      <span>Leite Condensado (+ R$ 2,00 cada)</span>
+      <span id="qtd-condensado">0</span>
+      <button type="button" onclick="menosExtra('condensado')">−</button>
+  
+      <button type="button" onclick="maisExtra('condensado')">+</button>
+  </div>
+  
+  <!-- QUANTIDADE -->
+  <section class="bloco">
+    <h3>Quantidade</h3>
+    <input type="number" id="qtd" value="1" min="1">
+  </section>
+  
+  <button id="add">Adicionar copo</button>
+  
+  <hr>
+  
+  <div id="lista"></div>
+  <h3 id="total">R$ 0,00</h3>
+  <button id="enviarWhats">Enviar pedido no WhatsApp</button>
+</div>
+
+
+</main>
+
+<footer>
+    
+        <h3>Flor de Guaraná</h3>
+
+        <div class="redes-sociais">
+            <a href="https://www.instagram.com/luci_anafdg/" target="_blank"><img src="imagens/insta.ico" alt="" class="icones2"></a>
+            <a href="https://wa.me/5584996222620" target="_blank"><img src="imagens/zap.ico" alt="" class="icones2"></a>
+        </div>
+
+        <div>
+            <h3>Funcionamento</h3>
+            <p>Segunda à Sábado - 10h às 22h</p>
+        </div>
+    </footer>
+
+<script src="js/funcionalidades.js"></script>
+</body>
+</html>

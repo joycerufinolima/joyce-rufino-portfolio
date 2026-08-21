@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   HEADER / NAVBAR
+========================= */
+
+header {
+    background: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    gap: 10px;
+}
+
+.logo-site {
+    width: 80px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(54, 33, 18);
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: #D93829;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #2A1B14;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* inputs */
+select,
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+/* botão principal */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #D93829;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #b82e22;
+}
+
+/* títulos */
+h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   CARRINHO
+========================= */
+
+#lista {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#lista div {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+#lista p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+#total {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* botão remover */
+#lista button {
+    background: #333;
+    margin-top: 8px;
+}
+
+#lista button:hover {
+    background: #000;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #2A1B14;
+    color: white;
+    padding: 25px 15px;
+    text-align: center;
+    gap: 10px;
+}
+
+footer h3 {
+    font-size: 18px;
+}
+
+.icones2 {
+    width: 30px;
+}
+
+/* =========================
+   RADIOS
+========================= */
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+label:hover {
+    border-color: #D93829;
+    background: #fff7f6;
+}
+
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+}
+
+/* =========================
+   EXTRAS
+========================= */
+
+.extra {
+    padding: 10px;
+}
+
+/* container */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width:768px) {
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .extra {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}

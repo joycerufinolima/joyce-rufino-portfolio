@@ -1,0 +1,770 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fundo: #F8F5F2;
+    --branco: #FFFFFF;
+    --texto: #292522;
+    --destaque: #A67C6B;
+    --destaque-claro: #DCC9BF;
+}
+
+body{
+    background-color: var(--fundo);
+    color: var(--texto);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+}
+
+.logo{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--destaque);
+
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--texto);
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.menu a:hover{
+    color: var(--destaque);
+}
+
+.btn{
+
+    background-color: var(--destaque);
+    color: var(--branco);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+
+}
+
+.botoes .btn2{
+
+    background-color: var(--destaque);
+    color: var(--branco);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    width: 200px;
+    text-align: center;
+    
+
+}
+
+.botoes .btn-tratamento{
+    background-color: transparent;
+    border: 1px solid black;
+    color: var(--texto);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    width: 250px;
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+.botoes{
+    margin-top: 20px;
+}
+
+.btn2:hover{
+    background-color: #b47159;
+}
+
+.btn-tratamento:hover{
+    background-color: black;
+    color: white;
+}
+
+.btn:hover{
+    background-color: var(--destaque);
+    color: black;
+    transform: translateY(-5px);
+}
+
+.container-hero{
+    display: flex;
+    max-width: 1920px;
+    height: 100vh;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    background-image: linear-gradient(to right,
+    rgba(248, 245, 242, 0.95) 0%,
+    rgba(248, 245, 242, 0.75) 45%,
+    rgba(248, 245, 242, 0.15) 100%), url(img/hero-clinica.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.conteudo-hero{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-hero .estetica{
+    font-family: "Playfair Display";
+    color: var(--destaque);
+    letter-spacing: 2px;
+}
+
+.conteudo-hero h1{
+    font-size: 3rem;
+    font-family: "Playfair Display";
+
+}
+
+.conteudo-hero p{
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.tratamentos{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 8%;
+    padding-right: 8%;
+    text-align: center;
+    background-color: var(--fundo);
+}
+
+.tratamentos h2{
+    font-size: 0.9rem;
+    color: var(--destaque);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.tratamentos h3{
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.tratamentos p{
+    max-width: 650px;
+    line-height: 1.6;
+    margin: 0 auto 50px;
+}
+
+.container-tratamento{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-tratamento{
+    background-color: var(--branco);
+    padding: 35px 25px;
+    border-radius: 10px;
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+.card-tratamento h3{
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.card-tratamento p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.card-tratamento a{
+    color: var(--destaque);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.card-tratamento:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(41, 37, 34, 0.1);
+}
+
+.sobre{
+    padding: 100px 8%;
+    background-color: var(--destaque-claro);
+
+}
+
+.sobre p:first-child{
+    font-size: 0.9rem;
+    color: var(--destaque);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+
+}
+
+.sobre h2{
+    max-width: 700px;
+    font-family: "Playfair Display", serif;
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+
+}
+
+.sobre h3{
+    
+    font-size: 1.5rem;
+    margin-top: 35px;
+    margin-bottom: 15px;
+
+}
+
+.sobre ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.sobre li{
+    position: relative;
+    padding: 15px 0;
+    color: var(--texto);
+    border-bottom: 1px solid rgba(166, 124, 107, 0.25);
+}
+
+.sobre li::before{
+    content: "•";
+    color: var(--destaque);
+    margin-right: 10px;
+}
+
+.numeros{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 70px 8%;
+    background-color: var(--destaque);
+    text-align: center;
+    color: var(--branco);
+}
+
+.card-numeros span{
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+
+}
+
+.card-numeros p{
+    font-size: 0.9rem;
+
+}
+
+.depoimentos{
+    padding: 100px 8%;
+    text-align: center;
+    background-color: var(--fundo);
+}
+
+.depoimentos p{
+    font-size: 0.9rem;
+    color: var(--destaque);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+
+}
+
+.depoimentos h2{
+    font-family: "Playfair Display",serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+
+}
+
+.container-depoimento{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-depoimento{
+    width: 30%;
+    min-height: 180px;
+    padding: 30px;
+    background-color: var(--branco);
+    border-radius: 10px;
+    text-align: left;
+    
+}
+
+.card-depoimento h3{
+     font-family: "Playfair Display",serif;
+     margin-bottom: 15px;
+
+
+}
+
+.card-depoimento p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.cta{
+    padding: 90px 8%;
+    text-align: center;
+    background-color: var(--destaque-claro);
+}
+
+.cta h2{
+     font-family: "Playfair Display",serif;
+     font-size: 2.8rem;
+     font-weight: 500;
+     margin-bottom: 15px;
+
+}
+
+.cta p:first-child{
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    margin: 0 auto 30px;
+}
+
+.cta .btn{
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.cta p:last-child{
+    font-size: 0.85rem;
+}
+
+.contato{
+    padding: 100px 8%;
+    background-color: var(--fundo);
+}
+
+.contato p:first-child{
+    font-size: 0.9rem;
+    color: var(--destaque);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.contato h2{
+    font-family: "Playfair Display", serif;
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.contato p{
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.informacoes{
+    max-width: 500px;
+    background-color: var(--branco);
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.informacoes h3{
+    font-family: "Playfair Display", serif;
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+}
+
+.informacoes h4{
+    color: var(--destaque);
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.informacoes p{
+    line-height: 1.5;
+}
+
+.rodape{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: var(--texto);
+    text-align: center;
+    color: var(--branco);
+
+}
+
+.logo-rodape p{
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--destaque-claro);
+    margin-bottom: 10px;
+}
+
+.rodape p{
+    margin-bottom: 20px;
+}
+
+.rodape a{
+    color: var(--branco);
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.rodape a:hover{
+    color: var(--destaque-claro);
+}
+
+.rodape hr{
+    border-color: rgba(255, 255, 255, 0.452);
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.rodape p:last-child{
+    font-size: 0.8rem;
+}
+
+/* =========================
+   RESPONSIVIDADE
+   ========================= */
+
+/* TABLETS E TELAS MÉDIAS */
+
+@media (max-width: 900px){
+
+    /* HEADER */
+
+    header{
+        padding: 15px 5%;
+        gap: 20px;
+    }
+
+    .menu{
+        gap: 15px;
+    }
+
+    .menu a{
+        font-size: 14px;
+    }
+
+
+    /* HERO */
+
+    .container-hero{
+        min-height: 90vh;
+        height: auto;
+        padding: 80px 8%;
+    }
+
+    .conteudo-hero{
+        max-width: 550px;
+    }
+
+    .conteudo-hero h1{
+        font-size: 2.7rem;
+    }
+
+
+    /* TRATAMENTOS */
+
+    .tratamentos{
+        padding: 80px 5%;
+    }
+
+    .container-tratamento{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* SOBRE */
+
+    .sobre{
+        padding: 80px 8%;
+    }
+
+
+    /* NÚMEROS */
+
+    .numeros{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 60px 8%;
+    }
+
+
+    /* DEPOIMENTOS */
+
+    .depoimentos{
+        padding: 80px 5%;
+    }
+
+    .container-depoimento{
+        flex-wrap: wrap;
+    }
+
+    .card-depoimento{
+        width: 45%;
+    }
+
+
+    /* CTA */
+
+    .cta{
+        padding: 80px 8%;
+    }
+
+
+    /* CONTATO */
+
+    .contato{
+        padding: 80px 8%;
+    }
+
+}
+
+
+/* CELULARES */
+
+@media (max-width: 600px){
+
+    /* HEADER */
+
+    header{
+        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo{
+        width: 100%;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .menu{
+        gap: 10px;
+    }
+
+    .menu a{
+        font-size: 13px;
+    }
+
+    header > .btn{
+        display: none;
+    }
+
+
+    /* HERO */
+
+    .container-hero{
+        min-height: 90vh;
+        padding: 70px 25px;
+        background-position: center;
+        align-items: center;
+    }
+
+    .conteudo-hero{
+        max-width: 100%;
+    }
+
+    .conteudo-hero h1{
+        font-size: 2.3rem;
+        line-height: 1.2;
+    }
+
+    .conteudo-hero p{
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .conteudo-hero .estetica{
+        font-size: 0.8rem;
+    }
+
+
+    /* BOTÕES DO HERO */
+
+    .botoes{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .botoes .btn2{
+        width: 200px;
+    }
+
+    .botoes .btn-tratamento{
+        width: 200px;
+        margin-top: 0;
+    }
+
+
+    /* TRATAMENTOS */
+
+    .tratamentos{
+        padding: 70px 20px;
+    }
+
+    .tratamentos h3{
+        font-size: 2rem;
+    }
+
+    .tratamentos > p{
+        font-size: 0.9rem;
+    }
+
+    .container-tratamento{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card-tratamento{
+        padding: 30px 25px;
+    }
+
+
+    /* SOBRE */
+
+    .sobre{
+        padding: 70px 25px;
+    }
+
+    .sobre h2{
+        font-size: 2.2rem;
+    }
+
+    .sobre ul{
+        max-width: 100%;
+    }
+
+
+    /* NÚMEROS */
+
+    .numeros{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px 15px;
+        padding: 60px 20px;
+    }
+
+    .card-numeros span{
+        font-size: 2rem;
+    }
+
+    .card-numeros p{
+        font-size: 0.8rem;
+    }
+
+
+    /* DEPOIMENTOS */
+
+    .depoimentos{
+        padding: 70px 20px;
+    }
+
+    .depoimentos h2{
+        font-size: 2rem;
+    }
+
+    .container-depoimento{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-depoimento{
+        width: 100%;
+        min-height: auto;
+        padding: 25px;
+    }
+
+
+    /* CTA */
+
+    .cta{
+        padding: 70px 25px;
+    }
+
+    .cta h2{
+        font-size: 2.2rem;
+    }
+
+
+    /* CONTATO */
+
+    .contato{
+        padding: 70px 25px;
+    }
+
+    .contato h2{
+        font-size: 2.2rem;
+    }
+
+    .informacoes{
+        padding: 25px;
+    }
+
+
+    /* FOOTER */
+
+    .rodape{
+        padding: 45px 20px 25px;
+    }
+
+    .rodape a{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
